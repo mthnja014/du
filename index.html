@@ -69,10 +69,7 @@ L.control.scale({maxWidth: 100, metric: true, imperial: true}).setPosition('bott
   var topo = L.esri.basemapLayer("Topographic").addTo(map);
   var imag = L.esri.basemapLayer("Imagery").addTo(map);
 
-var s_block = {"type":"FeatureCollection",
-               "features":[{"type":"Feature","id":1,
-                            "geometry":{"type":"Polygon",
-                                        "coordinates":[[
+var s_block = [
                                           [-29.85407246218741, 31.0032005492118],
                                           [-29.85411460710057, 31.0033663108396],
                                           [-29.85385553877975, 31.0034566373397],
@@ -133,7 +130,7 @@ var s_block = {"type":"FeatureCollection",
                                           [-29.85414963487476, 31.0048620857377],
                                           [-29.85417614390854, 31.0048549306564],
                                           [-29.85416500271373, 31.0048119426769],
-                                          [-29.8541294739805], 31.0048271161203],
+                                          [-29.8541294739805, 31.0048271161203],
                                           [-29.85411341351173, 31.0048105161522],
                                           [-29.85409454280825, 31.0047308275016],
                                           [-29.85407468497481, 31.0047221201316],
@@ -184,8 +181,9 @@ var s_block = {"type":"FeatureCollection",
                                           [-29.85399267086542, 31.0032133906288],
                                           [-29.85399697542556, 31.0032238218658],
                                           [-29.85407246218741, 31.00320054921184]
-                                        ]]
-                                       },"properties":{"OBJECTID":1,"Shape_Length":869.5483803523864,"Shape_Area":14206.087116388273}}]}
+                                        ];
+  var deepp = L.polygon(deep, {color: 'red'}).addTo(map);
+  deepp.bindPopup("OBJECTID:1 </br> Name: S Block :156 </br> Shape Area:14206 </br> Type : Lecture Complex");
 
 </script>
 </body>
