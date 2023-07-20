@@ -397,7 +397,7 @@ var library = [
   [-29.85399313832900, 31.0050237887771],
   [-29.85401621466451, 31.0051204007892],
   [-29.85404672521963, 31.0051135196942],
-  [29.854057301576237, 31.0051490696232],
+  [-29.854057301576237, 31.0051490696232],
   [-29.85403107610536, 31.0051616352574],
   [-29.85406058005177, 31.0052667722816],
   [-29.85408401865564, 31.0052619896510],
@@ -426,15 +426,22 @@ var library = [
   libraryy.bindPopup("OBJECTID:1 </br> Name: Library </br> Shape Area:5923 </br> Type : Facility");     
 
   var stop_bus = L.marker([-29.862189033488217, 31.014787424886574], {icon: bus}).addTo(map);
+  stop_bus.bindPopup("OBJECTID:1 </br> Name: Stop 1");
   var stop_bus2 = L.marker([-29.862671522601293, 31.014579442440422], {icon: bus}).addTo(map);
+    stop_bus.bindPopup("OBJECTID:2 </br> Name: Stop 2");
 
   var stop_bus3 = L.marker([-29.85046241874549, 31.014787424886574], {icon: bus}).addTo(map);
+    stop_bus3.bindPopup("OBJECTID:3 </br> Name: Stop 1");
   var stop_bus4 = L.marker([-29.862671522601293, 31.015752722151568], {icon: bus}).addTo(map);
+    stop_bus4.bindPopup("OBJECTID:4 </br> Name: Stop 1");
 
   var stop_bus5 = L.marker([-29.850422735911593, 31.011392544104211], {icon: bus}).addTo(map);
+    stop_bus5.bindPopup("OBJECTID:5 </br> Name: Stop 1");
   var stop_bus6 = L.marker([-29.852827119264983, 31.005625132706399], {icon: bus}).addTo(map);
+    stop_bus6.bindPopup("OBJECTID:6 </br> Name: Stop 1");
 
   var stop_bus7 = L.marker([-29.849722631888987, 31.006897714883955], {icon: bus}).addTo(map);
+    stop_bus7.bindPopup("OBJECTID:7 </br> Name: Stop 1");
   
 </script>
 </body>
