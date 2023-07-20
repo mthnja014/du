@@ -55,7 +55,7 @@ margin: 0;
 
 <script>
   const bus = L.icon({
-  iconUrl: "bus.jtif",
+  iconUrl: "bus.jfif",
   iconSize: [18, 18]
 });
   
@@ -425,7 +425,7 @@ var library = [
    var libraryy = L.polygon(library, {color: 'blue'}).addTo(map);
   libraryy.bindPopup("OBJECTID:1 </br> Name: Library </br> Shape Area:5923 </br> Type : Facility");     
 
-  var stop_bus = L.circle([-29.862189033488217, 31.014787424886574], 50).addTo(map);
+  var stop_bus = L.marker([-29.862189033488217, 31.014787424886574], {icon: bus}).addTo(map);
   var stop_bus2 = L.circle([-29.862671522601293, 31.014579442440422], 50).addTo(map);
 
   var stop_bus3 = L.circle([-29.85046241874549, 31.014787424886574], 50).addTo(map);
