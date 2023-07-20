@@ -423,7 +423,10 @@ var library = [
   [-29.85413834798438, 31.0048963286180]
 ];
    var libraryy = L.polygon(library, {color: 'blue'}).addTo(map);
-  libraryy.bindPopup("OBJECTID:1 </br> Name: Library </br> Shape Area:5923 </br> Type : Facility");     
+  libraryy.bindPopup("OBJECTID:1 </br> Name: Library </br> Shape Area:5923 </br> Type : Facility"); 
+
+   var botanic = L.marker([-29.8465880, 31.0070307], {icon: botanic}).addTo(map);
+  botanic.bindPopup("OBJECTID:1 </br> Name: Botanic Gardens </br> Type: Park");
 
   var stop_bus = L.marker([-29.862189033488217, 31.014787424886574], {icon: bus}).addTo(map);
   stop_bus.bindPopup("OBJECTID:1 </br> Name: Stop 1");
