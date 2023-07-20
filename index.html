@@ -60,9 +60,9 @@ margin: 0;
 });
   
 const key = 'i39Qg6QqR6C1s4K7BGko';
-var map = L.map('map').setView([-33.5, 22], 15);
+var map = L.map('map').setView([-29.8550908, 31.0123940], 15);
 map.setMinZoom(15);
-map.setMaxBounds([[-29.75559985, 31.0], [-29.9178145, 31.5]]);
+map.setMaxBounds([[-29.8476590, 31.0028300], [-29.8623998, 31.0229942]]);
 const gl = L.maplibreGL({
 attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
 style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${key}`
@@ -429,18 +429,14 @@ var library = [
   stop_bus.bindPopup("OBJECTID:1 </br> Name: Stop 1");
   var stop_bus2 = L.marker([-29.862671522601293, 31.014579442440422], {icon: bus}).addTo(map);
     stop_bus.bindPopup("OBJECTID:2 </br> Name: Stop 2");
-
   var stop_bus3 = L.marker([-29.850426520943412, 31.01581635880628], {icon: bus}).addTo(map);
     stop_bus3.bindPopup("OBJECTID:3 </br> Name: Stop 3");
-
-
-  var stop_bus5 = L.marker([-29.850422735911593, 31.011392544104211], {icon: bus}).addTo(map);
-    stop_bus5.bindPopup("OBJECTID:4 </br> Name: Stop 4");
-  var stop_bus6 = L.marker([-29.852827119264983, 31.005625132706399], {icon: bus}).addTo(map);
-    stop_bus6.bindPopup("OBJECTID:5 </br> Name: Stop 5");
-
-  var stop_bus7 = L.marker([-29.849722631888987, 31.006897714883955], {icon: bus}).addTo(map);
-    stop_bus7.bindPopup("OBJECTID:6 </br> Name: Stop 6");
+  var stop_bus4 = L.marker([-29.850422735911593, 31.011392544104211], {icon: bus}).addTo(map);
+    stop_bus4.bindPopup("OBJECTID:4 </br> Name: Stop 4");
+  var stop_bus5 = L.marker([-29.852827119264983, 31.005625132706399], {icon: bus}).addTo(map);
+    stop_bus5.bindPopup("OBJECTID:5 </br> Name: Stop 5");
+  var stop_bus6 = L.marker([-29.849722631888987, 31.006897714883955], {icon: bus}).addTo(map);
+    stop_bus6.bindPopup("OBJECTID:6 </br> Name: Stop 6");
   
 </script>
 </body>
