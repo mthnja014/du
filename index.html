@@ -446,14 +446,23 @@ var library = [
     stop_bus6.bindPopup("OBJECTID:6 </br> Name: Stop 6");
 
   var bs_ = L.layerGroup([stop_bus, stop_bus2, stop_bus3, stop_bus4, stop_bus5, stop_bus6]);
-
+  var lib_ = L.layerGroup([libraryy]);
+  var sp_ = L.layerGroup([sport_centerr]);
+  var br_ = L.layerGroup([bus_routee, bus_routee2]);
+  var rs_ = L.layerGroup([ress, ress2, ress3, ress4, ress5, ress6, ress7]);
+  var sb_ = L.layerGroup([s_blockk]);
+  
     var basemps = {
   "Imagery": imag,
   "Topographic": topo
 }
 
   var lyrs = {
-"Bus Stop": bs_
+"Bus Stop": bs_,
+"Library": lib_,
+"Sport Center": sp_,
+"Bus Route": br_,
+"University Residence": rs_,
   }
 
   var layerControl = L.control.layers(basemps, lyrs).addTo(map);
