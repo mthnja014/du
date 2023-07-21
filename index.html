@@ -444,6 +444,19 @@ var library = [
     stop_bus5.bindPopup("OBJECTID:5 </br> Name: Stop 5");
   var stop_bus6 = L.marker([-29.849722631888987, 31.006897714883955], {icon: bus}).addTo(map);
     stop_bus6.bindPopup("OBJECTID:6 </br> Name: Stop 6");
+
+  var bs_ = L.layerGroup([stop_bus, stop_bus2, stop_bus3, stop_bus4, stop_bus5, stop_bus6]);
+
+    var basemps = {
+  "Imagery": imag,
+  "Topographic": topo
+}
+
+  var lyrs = {
+"Bus Stop": bs_
+  }
+
+  var layerControl = L.control.layers(basemps, lyrs).addTo(map);
   
 </script>
 </body>
